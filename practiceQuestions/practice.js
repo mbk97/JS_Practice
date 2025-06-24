@@ -97,3 +97,33 @@ else if (number > 1) {
 else {
   console.log("The number is not a prime number.");
 }
+
+const convertStringToArray = (val) => {
+  const result = val.split("");
+  return result;
+};
+
+// console.log(convertStringToArray("hello"));
+
+// ! convertAnArrayToString
+const convertAnArrayToString = (arr) => {
+  const result = arr.join("");
+  return result;
+};
+console.log(convertAnArrayToString(["hi", "hello"]));
+
+//! convertArrayToString
+const convertArrayToString = (arr) => {
+  let result = "";
+  for (let i = 0; i < arr.length; i++) {
+    result += arr[i]; // concatenate each element
+  }
+  return result;
+};
+
+console.log(convertArrayToString(["h", "e", "l", "l", "o"])); // Output: "hello"
+
+const arr1 = [1, 2, 3, 4, 5];
+
+arr1[1] = 7;
+console.log(arr1);
