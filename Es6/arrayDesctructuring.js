@@ -1,10 +1,9 @@
 function getScores() {
   return [29, 23, 5, 10, 11, 23];
 }
+const [x, y, z, , l, m] = getScores();
 
-const [x, y, z] = getScores();
-
-console.log(x, y, z);
+console.log(x, y, z, l, m);
 
 // ! If the getScores() function returns an array of two elements, the third variable will be undefined
 

@@ -14,7 +14,6 @@ const checkAscendingArray = (arr) => {
       break; // Exit the loop early since we found the array is not sorted
     }
   }
-
   if (isSorted) {
     console.log("Array is sorted in ascending order");
   } else {

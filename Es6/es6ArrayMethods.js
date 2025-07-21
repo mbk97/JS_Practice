@@ -20,8 +20,8 @@ const arr = new Array(5);
 
 // !! **** This method always creates an array that contains the values that you pass to it regardless of the types or the number of arguments.
 
-// const newNum = Array.of(1, 2, 3, 4);
-// console.log(newNum.length, "New Num here");
+const newNum = Array.of(1, 2, 3, 4);
+console.log(newNum.length, "New Num here");
 
 // !! Array.from() method
 
@@ -77,7 +77,7 @@ let numbers = [1, 2, 3, 4, 5, 6, 14];
 
 console.log(
   numbers.find((e) => e % 7 === 0),
-  "HHHHHHHHHHHH",
+  "HHHHHHHHHHHH"
 );
 
 let customers = [
@@ -122,7 +122,7 @@ let ranks = [1, 5, 7, 8, 10, 7];
 
 console.log(
   ranks.findIndex((rank, index) => rank === 7 && index > 2),
-  "Solution",
+  "Solution"
 );
 
 // ** The following example uses the Array findIndex() method to find the index of the first product whose price is greater than 1000:
@@ -139,5 +139,5 @@ console.log(index, "Index");
 console.log(
   Array.from(10).map((arr) => {
     return "hello";
-  }),
+  })
 );

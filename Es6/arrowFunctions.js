@@ -42,5 +42,36 @@ let names = ["John", "Mac", "Peter"];
 console.log(
   Array.of(1, 2, 3, 4).map((r) => {
     return "hello";
-  }),
+  })
 );
+
+//! The major difference between arrow functions and traditional functions in JavaScript is how they handle the this keyword.
+
+// ✅ Arrow Function:
+// Does not have its own this.
+
+// Inherits this from the surrounding (lexical) scope.
+
+const obj = {
+  name: "Mubarak",
+  greet: () => {
+    console.log(this.name); // undefined
+  },
+};
+obj.greet();
+// this here refers to the global object, not obj.
+
+// ✅ Traditional Function:
+// Has its own this.
+
+// this is determined by how the function is called.
+
+const obj3 = {
+  name: "Mubarak",
+  greet() {
+    console.log(this.name); // "Mubarak"
+  },
+};
+obj.greet();
+
+// this correctly refers to obj.

@@ -1,8 +1,8 @@
 const arrayExOne = [10, 252, 7, 22, 29];
 
-const findSmallestExampleOne = (arr) => {
+const findTheSmallestNumber = (arr) => {
   if (arr.length === 0) {
-    return null;
+    return;
   }
   let smallest = arr[0];
   for (let i = 1; i < arr.length; i++) {
@@ -12,7 +12,8 @@ const findSmallestExampleOne = (arr) => {
   }
   return smallest;
 };
-console.log(findSmallestExampleOne(arrayExOne));
+
+console.log(findTheSmallestNumber(arrayExOne));
 
 const findTheLargestSum = (arr) => {
   if (arr.length === 0) {
